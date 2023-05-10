@@ -12,7 +12,7 @@ export default function Products(){
             setProducts(res.data.data)
             // console.log(res.data.data);
         }).catch((err)=>{
-            // alert(err)
+            alert(err)
         });
     },[])
 
@@ -39,7 +39,7 @@ export default function Products(){
     return(
         <div className="product-container">
             {
-                products.map(({ productImage, productName, price, discountedPrice } , i)=>{
+                products.map(({ productCode, productImage, productName, price, discountedPrice } , i)=>{
                     return(
                         <>
                         <div className="product-card">
@@ -48,8 +48,9 @@ export default function Products(){
                                     <img src={productImage[0]} alt="Latest Product" />
                                 </a>
                                 <button className="card-btn">
-                                    <SuitHeart />
+                                    <SuitHeart productId={productCode} />
                                 </button>
+                                <a href='#' className='quick-view'>Quick view</a>
                             </div>
                             <div className="product-info">
                                 <h4 className="product-brand">{productName}</h4>

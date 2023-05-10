@@ -160,6 +160,10 @@ i.fa.fa-arrow-up {
     list-style: none;
     padding-left: 10px;
 }
+#footer a{
+    color: black;
+    text-decoration: none;
+}
 .icon-rtl {
     padding: 5px 25px 5px 10px;
     background: url(../images/send.png) no-repeat right;
@@ -235,7 +239,7 @@ i.fa.fa-arrow-up {
 .product {
     overflow: hidden;
     position: relative;
-    padding: 20px;
+    padding: 0 20px;
 }
 .product-container {
     padding: 2rem 8rem;
@@ -400,6 +404,25 @@ h4.product-brand {
     padding: 10px;
     border-radius: 50%;
 }
+.product-image .quick-view{
+    position: absolute;
+    opacity: 0;
+}
+.product-image:hover .quick-view{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background: white;
+    border: 1px solid #d0d1d4;
+    /* border-top-right-radius: 5px;
+    border-top-left-radius: 5px; */
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
 
 
 
@@ -449,7 +472,7 @@ h4.product-brand {
 }
 /* Card carousel */
 #myCarousel {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 @media (max-width: 768px) {
     .carousel-inner .carousel-item>div {
@@ -467,10 +490,10 @@ h4.product-brand {
 }
 @media (min-width: 768px) {
     .carousel-control-prev {
-        left: -7rem;
+        left: -4.5rem !important;
     }
     .carousel-control-next {
-        right: -7rem;
+        right: -4.5rem !important;
     }
 }
 .testimonials .cntrl-1{
@@ -520,12 +543,6 @@ h4.product-brand {
     height: 2em;
     width: 2em;
     margin: 1rem;
-}
-.carousel-control-next {
-    right: -4.5rem !important;
-}
-.carousel-control-prev {
-    left: -4.5rem !important;
 }
 
 /* -------------------- Media Query -------------------- */

@@ -2,10 +2,15 @@ import Products from '../components/Products'
 import  './home.css'
 import { SuitHeart, Person, Bag } from 'react-bootstrap-icons'
 import Slideshow from '../components/Slideshow'
-import { FaQuoteRight } from 'react-icons/fa'
+import { FaQuoteRight, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
+import { FiArrowUp, FiInstagram, FiTwitter, FiLinkedin, FiFacebook } from 'react-icons/fi'
 
 
 export default function HomePage(){
+
+    
+
+    
 
     return(
         <>
@@ -82,7 +87,7 @@ export default function HomePage(){
   {/* End of Header  */}
 
   {/* Slideshow */}
-  <Slideshow></Slideshow>
+  {/* <Slideshow></Slideshow> */}
   {/* End of slideshow */}
 
   {/* Latest products */}
@@ -431,16 +436,16 @@ export default function HomePage(){
         </p>
         <div className="social-media">
           <a href="#">
-            <i className="fa fa-facebook" />
+            <FiFacebook></FiFacebook>
           </a>
           <a href="#">
-            <i className="fa fa-instagram" />
+            <FiInstagram></FiInstagram>
           </a>
           <a href="#">
-            <i className="fa fa-twitter" />
+            <FiTwitter></FiTwitter>
           </a>
           <a href="#">
-            <i className="fa fa-linkedin" />
+            <FiLinkedin></FiLinkedin>
           </a>
         </div>
       </div>
@@ -499,8 +504,9 @@ export default function HomePage(){
   {/* End of Footer  */}
   {/* Go to top button  */}
   <a href="#" className="go-to-top">
-    <i className="fa fa-arrow-up" />
+    <FiArrowUp></FiArrowUp>
   </a>
+  {/* Go to top button  */}
 </>
 
     )
